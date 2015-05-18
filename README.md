@@ -17,7 +17,8 @@ $ foreman start web
 Your app should now be running on [localhost:5000](http://localhost:5000/).
 
 As a JPA sample, you can get the customer list on [localhost:5000/customers](http://localhost:5000/customers)
-And add a customer by send POST request to [localhost:5000/customers](http://localhost:5000/customers) with 
+And in order to add a customer, send a POST request to [localhost:5000/customers](http://localhost:5000/customers) with a json message.
+Below is a curl example.  
 ````sh
 $ curl -X POST -H "Content-Type: application/json" -d '{"firstName":"John","lastName":"Doe"}' http://localhost:8080/customers/
 ````
