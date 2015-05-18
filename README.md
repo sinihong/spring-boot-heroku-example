@@ -21,6 +21,8 @@ And add a customer by send POST request to [localhost:5000/customers](http://loc
 ````sh
 $ curl -X POST -H "Content-Type: application/json" -d '{"firstName":"John","lastName":"Doe"}' http://localhost:8080/customers/
 ````
+For reference, my test postgresql is configured in the application.properties. 
+
 
 ## Running from Eclipse
 * Install maven eclipse plugin - m2e. (if you are a strong spring user, Spring Tool Suite is recommended which includes the m2e.)
