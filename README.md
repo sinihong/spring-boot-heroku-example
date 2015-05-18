@@ -1,6 +1,6 @@
 # spring-boot-heroku-example
 
-A barebones Java app, which can easily be deployed to Heroku.  
+A example Java app using *Spring Boot*, *Restful API with Spring MVC*, *JPA* and *Postgresql*, which can easily be deployed to Heroku.  
 
 This application support the [Getting Started with Java on Heroku](https://devcenter.heroku.com/articles/getting-started-with-java) article - check it out.
 
