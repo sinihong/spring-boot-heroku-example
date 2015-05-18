@@ -16,13 +16,17 @@ $ foreman start web
 ```
 Your app should now be running on [localhost:5000](http://localhost:5000/).
 
-You can get the customer list on [localhost:5000/customers](http://localhost:5000/customers)
-And add a customer
+As a JPA sample, you can get the customer list on [localhost:5000/customers](http://localhost:5000/customers)
+And add a customer by send POST request to [localhost:5000/customers](http://localhost:5000/customers) with 
+````sh
+$ curl -X POST -H "Content-Type: application/json" -d '{"firstName":"John","lastName":"Doe"}' http://localhost:8080/customers/
+````
 
-## Running in IDE(Eclipse)
+## Running from Eclipse
 * Install maven eclipse plugin - m2e. (if you are a strong spring user, Spring Tool Suite is recommended which includes the m2e.)
 * Import 'Existing Maven Project' and select the directory you clone.
 * Run 'SampleApplication' as a Java Application or Spring Boot App if you installed Spring Tool Suite. 
+Your app should now be running on [localhost:8080](http://localhost:8080/).
 
 ## Deploying to Heroku
 
