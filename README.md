@@ -12,7 +12,7 @@ Make sure you have Java and Maven installed.  Also, install the [Heroku Toolbelt
 $ git clone https://github.com/sinihong/spring-boot-heroku-example.git 
 $ cd spring-boot-heroku-example
 $ mvn install
-$ foreman start web
+$ heroku local web
 ```
 Your app should now be running on [localhost:5000](http://localhost:5000/).
 
@@ -20,7 +20,7 @@ As a JPA sample, you can get the customer list on [localhost:5000/customers](htt
 And in order to add a customer, send a POST request to [localhost:5000/customers](http://localhost:5000/customers) with a json message.
 Below is a curl example.  
 ````sh
-$ curl -X POST -H "Content-Type: application/json" -d '{"firstName":"John","lastName":"Doe"}' http://localhost:8080/customers/
+$ curl -X POST -H "Content-Type: application/json" -d '{"firstName":"John","lastName":"Doe"}' http://localhost:5000/customers/
 ````
 For reference, my test postgresql is configured in the application.properties. 
 
